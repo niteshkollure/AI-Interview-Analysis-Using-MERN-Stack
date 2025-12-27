@@ -1,0 +1,263 @@
+.settings-page {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+:root[data-theme="dark"] .settings-page {
+  background: #2d2d2d;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.settings-page h2 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+:root[data-theme="dark"] .settings-page h2 {
+  color: #ffffff;
+}
+
+.settings-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+:root[data-theme="dark"] .settings-section {
+  background: #3f3f3f;
+  border-left-color: #667eea;
+}
+
+.section-header {
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.section-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+:root[data-theme="dark"] .section-header h3 {
+  color: #ffffff;
+}
+
+/* Theme Mode Section */
+.mode-section {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.mode-btn {
+  padding: 12px 24px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.mode-btn:hover {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.mode-btn.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+/* Audio & Camera Settings */
+.settings-item {
+  margin-bottom: 16px;
+  padding: 12px;
+  background: white;
+  border-radius: 6px;
+}
+
+:root[data-theme="dark"] .settings-item {
+  background: #2d2d2d;
+}
+
+.settings-item label {
+  display: block;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+:root[data-theme="dark"] .settings-item label {
+  color: #ffffff;
+}
+
+.settings-item input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.setting-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setting-control label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.description {
+  display: block;
+  font-size: 13px;
+  color: #888;
+  margin-left: 26px;
+  margin-top: 4px;
+}
+
+.slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: #ddd;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #667eea;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #667eea;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Dropdown Select */
+.select-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+:root[data-theme="dark"] .select-input {
+  background: #3f3f3f;
+  color: #ffffff;
+  border-color: #555;
+}
+
+:root[data-theme="dark"] .select-input {
+  background: #3f3f3f;
+  color: #ffffff;
+  border-color: #555;
+}
+
+.select-input:hover,
+.select-input:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+/* Password Section */
+.password-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.password-section input[type="password"],
+.password-section input[type="text"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  background: white;
+  color: #333;
+}
+
+:root[data-theme="dark"] .password-section input[type="password"],
+:root[data-theme="dark"] .password-section input[type="text"] {
+  background: #3f3f3f;
+  color: #ffffff;
+  border-color: #555;
+}
+
+.password-section input[type="password"]:focus,
+.password-section input[type="text"]:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.btn-change-password {
+  padding: 12px;
+  background: #764ba2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.btn-change-password:hover {
+  background: #6a4298;
+  box-shadow: 0 4px 8px rgba(118, 75, 162, 0.3);
+}
+
+.btn-change-password:active {
+  transform: scale(0.98);
+}

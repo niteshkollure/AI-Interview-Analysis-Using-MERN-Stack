@@ -1,0 +1,44 @@
+.practice-page {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  max-width: 900px;
+  margin: 30px auto;
+}
+.practice-page h2 {
+  margin-top: 0;
+  color: #333;
+}
+.practice-list {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.practice-card {
+  flex: 1;
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.practice-card h3 {
+  margin-top: 0;
+  color: #667eea;
+}
+.practice-card button {
+  margin-top: auto;
+  padding: 10px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.practice-card button:hover {
+  background: #5a6fd8;
+}

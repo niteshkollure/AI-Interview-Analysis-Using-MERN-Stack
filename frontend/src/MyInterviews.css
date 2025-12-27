@@ -1,0 +1,30 @@
+.myinterviews-page {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  max-width: 900px;
+  margin: 30px auto;
+}
+.myinterviews-page h2 {
+  margin-top: 0;
+  color: #333;
+}
+.myinterviews-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.myinterviews-table th, .myinterviews-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+.myinterviews-table th {
+  background: #f4f4f4;
+  color: #555;
+  font-size: 14px;
+}
+.myinterviews-table td {
+  font-size: 15px;
+}
